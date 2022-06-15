@@ -8,6 +8,7 @@ import HOC from "./Components/HOC";
 import HOCColor from "./Components/HOCColor";
 import CallToActionWithVideo from "./Components/CallToActionWithVideo";
 import WithAction from "./Components/withAction";
+import Producto from "./Components/Producto";
 
 function App() {
   let decir = "APP ABUELO QUIERE DECIR ALGO";
@@ -16,10 +17,19 @@ function App() {
     alert("hola mundo");
   }
 
+  let miProd = { id: 0, name: "zapato nike", price: 100 };
+  let maxStok = 100;
   return (
     <>
-      <WithAction />
-      <CallToActionWithVideo />
+      <div>NAVBAR</div>
+      <Producto
+        miProd={miProd}
+        maxStok={maxStok}
+        alertHolaMundo={alertHolaMundo}
+      />
+      <div>FOOTER</div>
+      {/* <WithAction />
+      <CallToActionWithVideo /> */}
       {/* {decir}
       <Test msg="juan" msg2="juan" />
       <Test msg="sofia" msg2="juan" />
