@@ -9,6 +9,8 @@ import HOCColor from "./Components/HOCColor";
 import CallToActionWithVideo from "./Components/CallToActionWithVideo";
 import WithAction from "./Components/withAction";
 import Producto from "./Components/Producto";
+import TestPromesa from "./Components/TestPromesa";
+import TestPromesaArray from "./Components/TestPromesaArray";
 
 function App() {
   let decir = "APP ABUELO QUIERE DECIR ALGO";
@@ -21,13 +23,15 @@ function App() {
   let maxStok = 100;
   return (
     <>
-      <div>NAVBAR</div>
+      {/* <TestPromesa /> */}
+      <TestPromesaArray />
+      {/* <div>NAVBAR</div>
       <Producto
         miProd={miProd}
         maxStok={maxStok}
         alertHolaMundo={alertHolaMundo}
       />
-      <div>FOOTER</div>
+      <div>FOOTER</div> */}
       {/* <WithAction />
       <CallToActionWithVideo /> */}
       {/* {decir}
