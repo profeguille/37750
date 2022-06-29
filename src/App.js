@@ -1,9 +1,8 @@
 //@ts-check
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import CatsContainer from "./Components/claseApis/CatsContainer";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ItemListContainer from "./pf/ItemListContainer";
 import ItemDetailContainer from "./pf/ItemDetailContainer";
+import ItemListContainer from "./pf/ItemListContainer";
 
 function App() {
   return (

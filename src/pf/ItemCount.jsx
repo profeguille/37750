@@ -16,11 +16,14 @@ export default function ItemCount({ stock, onAdd }) {
 
   return (
     <>
-      <button onClick={remove}>-</button>
-      <p>{count}</p>
-      <button onClick={add}>+</button>
-      <br />
-      <button onClick={() => onAdd(count)}>AGREGAR AL CARRO</button>
+      <div style={{ border: "3px solid red" }}>
+        BOTONERA ITEMCOUNT
+        <button onClick={remove}>-</button>
+        <p>{count}</p>
+        <button onClick={add}>+</button>
+        <br />
+        <button onClick={() => onAdd(count)}>AGREGAR AL CARRO</button>
+      </div>
     </>
   );
 }

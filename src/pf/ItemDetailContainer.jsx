@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ItemList from "./ItemList";
-import { Link } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
 
 export default function ItemDetailContainer() {
