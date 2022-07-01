@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import ItemList from "./ItemList";
+import { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import ItemList from './ItemList';
 
 export default function ItemListContainer() {
   const [items, setItems] = useState([]);
@@ -8,14 +8,14 @@ export default function ItemListContainer() {
 
   useEffect(() => {
     const mock = [
-      { id: 101, name: "zapato nike", stock: 20, price: 100, category: "nike" },
-      { id: 102, name: "pelota nike", stock: 10, price: 20, category: "nike" },
+      { id: 101, name: 'zapato nike', stock: 20, price: 100, category: 'nike' },
+      { id: 102, name: 'pelota nike', stock: 10, price: 20, category: 'nike' },
       {
         id: 103,
-        name: "zapato adidas",
+        name: 'zapato adidas',
         stock: 5,
         price: 170,
-        category: "adidas",
+        category: 'adidas',
       },
     ];
 
@@ -33,10 +33,10 @@ export default function ItemListContainer() {
   return (
     <>
       <p>
-        <Link to={"/category/nike"}>NIKE</Link>
+        <Link to={'/category/nike'}>NIKE</Link>
       </p>
       <p>
-        <Link to={"/category/adidas"}>ADIDAS</Link>
+        <Link to={'/category/adidas'}>ADIDAS</Link>
       </p>
       <div>
         <ItemList items={items} />
