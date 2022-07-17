@@ -4,7 +4,7 @@ import { myContext } from './HOCContext';
 
 export default function Item({ item }) {
   const { darkMode, setDarkMode } = useContext(myContext);
-
+  console.log('render item');
   return (
     <div>
       <div>{JSON.stringify(item)}</div>

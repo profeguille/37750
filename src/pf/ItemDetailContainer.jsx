@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import ItemDetail from "./ItemDetail";
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import ItemDetail from './ItemDetail';
 
 export default function ItemDetailContainer() {
   const [item, setItem] = useState({});
@@ -8,14 +8,14 @@ export default function ItemDetailContainer() {
 
   useEffect(() => {
     const mock = [
-      { id: 101, name: "zapato nike", stock: 20, price: 100, category: "nike" },
-      { id: 102, name: "pelota nike", stock: 10, price: 20, category: "nike" },
+      { id: 101, name: 'zapato nike', stock: 20, price: 100, category: 'nike' },
+      { id: 102, name: 'pelota nike', stock: 10, price: 20, category: 'nike' },
       {
         id: 103,
-        name: "zapato adidas",
+        name: 'zapato adidas',
         stock: 5,
         price: 170,
-        category: "adidas",
+        category: 'adidas',
       },
     ];
 
